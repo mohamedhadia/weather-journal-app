@@ -47,7 +47,7 @@ const updateUI = async () => {
 const generateData = async () => {
   const feelings = userInput.value;
   const zip = zipCode.value;
-  const response = await fetch(`http://${baseURL}${zip}${apiId}`);
+  const response = await fetch(`https://${baseURL}${zip}${apiId}`);
   try {
     const data = await response.json();
     data.feelings = feelings;
